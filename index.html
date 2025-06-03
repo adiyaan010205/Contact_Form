@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="floating-elements">
+        <div class="floating-circle circle-1"></div>
+        <div class="floating-circle circle-2"></div>
+        <div class="floating-circle circle-3"></div>
+        <div class="floating-triangle triangle-1"></div>
+        <div class="floating-triangle triangle-2"></div>
+        <div class="floating-dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="form-container">
+            <div class="header-section">
+                <div class="animated-logo">
+                    <svg width="60" height="60" viewBox="0 0 60 60" class="logo-icon">
+                        <circle cx="30" cy="30" r="25" fill="none" stroke="#9CAF88" stroke-width="2" class="logo-circle"/>
+                        <path d="M20 30 L27 37 L40 23" stroke="#9CAF88" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" class="logo-check"/>
+                    </svg>
+                </div>
+                <h1 class="form-title">Get in Touch</h1>
+                <p class="form-subtitle">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+            </div>
+
+            <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-group" data-field="name">
+                    <label for="name" class="form-label">
+                        <span class="label-text">Your Name</span>
+                        <span class="label-decoration"></span>
+                    </label>
+                    <div class="input-wrapper">
+                        <input type="text" id="name" name="name" class="form-control creative-input" placeholder="Enter your full name" aria-describedby="name-error">
+                        <div class="input-border"></div>
+                    </div>
+                    <div class="error-message" id="name-error" role="alert" aria-live="polite"></div>
+                </div>
+
+                <div class="form-group" data-field="email">
+                    <label for="email" class="form-label">
+                        <span class="label-text">Email Address</span>
+                        <span class="label-decoration"></span>
+                    </label>
+                    <div class="input-wrapper">
+                        <input type="email" id="email" name="email" class="form-control creative-input" placeholder="Enter your email address" aria-describedby="email-error">
+                        <div class="input-border"></div>
+                    </div>
+                    <div class="error-message" id="email-error" role="alert" aria-live="polite"></div>
+                </div>
+
+                <div class="form-group" data-field="message">
+                    <label for="message" class="form-label">
+                        <span class="label-text">Your Message</span>
+                        <span class="label-decoration"></span>
+                    </label>
+                    <div class="input-wrapper">
+                        <textarea id="message" name="message" class="form-control creative-input" rows="5" placeholder="Share your thoughts with us..." aria-describedby="message-error"></textarea>
+                        <div class="input-border"></div>
+                    </div>
+                    <div class="error-message" id="message-error" role="alert" aria-live="polite"></div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary creative-btn submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <div class="btn-ripple"></div>
+                    </button>
+                    <button type="button" class="btn btn-secondary creative-btn reset-btn" id="resetBtn">
+                        <span class="btn-text">Reset Form</span>
+                        <div class="btn-ripple"></div>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <svg width="80" height="80" viewBox="0 0 80 80">
+                    <circle cx="40" cy="40" r="35" fill="none" stroke="#9CAF88" stroke-width="3" class="success-circle"/>
+                    <path d="M25 40 L35 50 L55 30" stroke="#9CAF88" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" class="success-check"/>
+                </svg>
+            </div>
+            <h2 class="modal-title">Message Sent!</h2>
+            <p class="modal-message">Thank you! Your message has been submitted successfully. We'll get back to you soon.</p>
+            <button class="btn btn-primary creative-btn" id="closeModal">
+                <span class="btn-text">Continue</span>
+                <div class="btn-ripple"></div>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
