@@ -57,7 +57,7 @@ A modern, accessible, and visually soothing contact form built using **HTML**, *
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/adiyaan010205/contact-form.git
+   git clone https://github.com/adiyaan010205/Contact_Form.git
 ````
 
 2. **Open in Your Editor**
